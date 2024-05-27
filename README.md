@@ -1,27 +1,28 @@
 
-# API Workout
+# API Song
 
-API Workout provides a structured way to access and manage workout information. It gives you a response based on workout data, such as exercise names, number of repetitions, load, and timestamps for when the workout was created or updated. This allows apps and services to easily share and track fitness routines.
+The Song API provides endpoints to access and manage song information. It allows developers to get, update, delete, and add songs easily.
 
 ## Features
 
 
-- Get all workouts (GET): https://api-workout.vercel.app/api/workouts
+- Get all workouts (GET): https://api-song-khaki.vercel.app/api/songs
 
-- Get workout by ID (GET): https://api-workout.vercel.app/api/workouts/{id}
+- Get workout by ID (GET): https://api-song-khaki.vercel.app/api/songs/{id}
 
-- Update workout (PATCH): https://api-workout.vercel.app/api/workouts/{id}
+- Update workout (PATCH): https://api-song-khaki.vercel.app/api/songs/{id}
 
-- Delete workout by ID (DELETE): https://api-workout.vercel.app/api/workouts/{id}
+- Delete workout by ID (DELETE): https://api-song-khaki.vercel.app/api/songs/{id}
 
-- Add workout (POST): https://api-workout.vercel.app/api/workouts
+- Add workout (POST): https://api-song-khaki.vercel.app/api/songs
 
 Updating and adding a workout require a request body in the following format:
 
     {
-        "title": STRING,
-        "load": NUMBER,
-        "reps": NUMBER
+        "song_id": STRING,
+        "song_name": STRING,
+        "song_url": STRING,
+        "song_image": STRING
     }
 
 
